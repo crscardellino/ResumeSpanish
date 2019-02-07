@@ -1,0 +1,826 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
+  % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis}
+  % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita}
+  % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
+  % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
+  % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011}
+  % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0
+  \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3
+  % Define a command for each new block - change spacing and font sizes here:
+  % #1 is the left margin, #2 is the italic date field and #3 is the
+  % position/employer/location field
+
+  \vspace{0.5em} % Add some white space after each new entry
+}
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright
+  \footnotesize{#1}\par\normalsize\vspace{1em}}
+  % Define a command for descriptions of each entry - change spacing and font
+  % sizes here
+
+\date{}
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%-------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%-------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Cristian Adri\'an Cardellino}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{\Large{Datos Personales}}\vspace{0.5em}
+
+\NewEntry{DNI}{34335379} % DNI
+
+\NewEntry{Nacimiento}{29 de Abril de 1989}
+
+\NewEntry{T\'itulo}{Dr.\ en Cs.\ de la Computaci\'on}
+
+% \NewEntry{Ingreso}{2013}
+
+% \NewEntry{Egreso}{2018}
+
+% \NewEntry{Promedio}{8.74}
+
+\vspace{2em}
+
+% \noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used
+% for a quotation or short profile instead
+
+% \Description{Gain fundamental experience in my area of interest and
+% expertise.}\vspace{2em} % Goal text
+
+%-------------------------------------------------------------------------------
+%	ANTECEDENTES DOCENTES
+%-------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{\Large{Docencia}}\vspace{1em}
+
+\NewEntry{3 a\~nos}{\textsc{Profesor Ayudante A} --- FAMAFyC. UNC.}
+
+\Description{\MarginText{2018}{Sistemas Operativos -- 1
+Semestre. C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2015-2018}{Paradigmas de Programaci\'on -- 4
+Semestres. C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2017}{Bases de Datos -- 1 Semestre.
+C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2015-2016}{Ingenier\'ia del Software I -- 2 Semestres.
+C\'ordoba, Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2.5 a\~nos}{\textsc{Ayudante de Alumno}  --- FAMAFyC. UNC.}
+
+\Description{\MarginText{2011, 2013}{Paradigmas de Programaci\'on -- 2
+Semestres. C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2012}{Redes y Sistemas Distribu\'idos -- 1 Semestre.
+C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2011-2012}{Ingenier\'ia del Software I -- 2 Semestres.
+C\'ordoba, Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{}{\textsc{Suplencias}}
+
+\Description{\MarginText{2017}{Miner\'ia de datos para texto -- 2 Semanas.
+FAMAFyC.  UNC. C\'ordoba, Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{}{\textsc{Cursos y Tutoriales}}
+
+\Description{\MarginText{2018}{Introducci\'on al Aprendizaje Profundo -- Curso Te\'orico-Pr\'actico. 
+Diplomatura en ciencias de datos, aprendizaje autom\'atico y sus aplicaciones. FAMAFyC. UNC. C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2018}{Introducci\'on al Aprendizaje Autom\'atico -- Curso Te\'orico-Pr\'actico. 
+Diplomatura en ciencias de datos, aprendizaje autom\'atico y sus aplicaciones. FAMAFyC. UNC. C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2018}{An\'alisis y visualizaci\'on de datos -- Tutor\'ias. Diplomatura en
+ciencias de datos, aprendizaje autom\'atico y sus aplicaciones. FAMAFyC. UNC. C\'ordoba, Argentina.}}
+
+\Description{\MarginText{2017}{Train and visualize a model in Tensorflow
+-- Tutorial. XXV Escuela de Verano de Ciencias Inform\'aticas-RIO 2018. UNRC. R\'io Cuarto, Argentina.}}
+
+\Description{\MarginText{2017}{Express Deep Learning with Python --
+Tutorial. $1^{\circ}$ Escuela Argentina de Inteligencia Artificial. 
+$46^{\circ}$ JAIIO. UTN. C\'ordoba. Argentina}}
+
+%------------------------------------------------
+\newpage
+
+\NewEntry{}{\textsc{Dise\~no de Material Te\'orico-Pr\'actico}}
+
+\Description{\MarginText{2018}{Material te\'orico-pr\'actico para clases de
+introducci\'on al aprendizaje autom\'atico.}}
+
+\Description{\MarginText{2016-2018}{Laboratorios Paradigmas de Programaci\'on:
+Orientaci\'on a objectos y frameworks.}}
+
+\Description{\MarginText{2017}{Material te\'orico-pr\'actico clases de
+miner\'ia de datos para texto: Introducci\'on a redes neuronales, redes
+convolucionales y vectores de palabras.}}
+
+\Description{\MarginText{2017}{Material te\'orico-pr\'actico tutoriales EAIA y
+PyData: Dise\~no de redes neuronales con Python.}}
+
+\Description{\MarginText{2016}{Dise\~no de proyecto Ingenier\'ia del Software
+I: Aplicaci\'on de simulaci\'on y evaluaci\'on de ex\'amenes de opci\'on
+m\'ultiple.}}
+
+%------------------------------------------------
+
+\NewEntry{}{\textsc{Tribunales de tesis}}
+
+\Description{\MarginText{2018}{Tribunal de tesina de grado de Juan Scavuzzo: 
+``Estratificaci\'on temporal de Aedes Aegypti basada en herramientas geoespaciales y aprendizaje
+autom\'atico''.}}
+
+\Description{\MarginText{2018}{Tribunal de tesina de grado de Agust\'in Capello: 
+``Recomendaci\'on de textos legales''.}}
+
+\Description{\MarginText{2018}{Tribunal de tesina de grado de Agust\'in M\'arquez Braconi: 
+``Framework para aprendizaje activo''.}}
+
+\Description{\MarginText{2018}{Tribunal de tesina de grado de Jonathan David Mutal: 
+``Evaluaci\'on comparativa de modelos de traducci\'on estad\'istica y neuronal''.}}
+
+\vspace{2em} % Extra space between major sections
+%\newpage
+
+%-------------------------------------------------------------------------------
+%	INVESTIGACIÓN
+%-------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{\Large{Investigaci\'on}}\vspace{1em}
+
+\noindent\spacedlowsmallcaps{Trabajos publicados en revistas}
+\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{Mar 2018}{Exploring the impact of word embeddings for disjoint semisupervised Spanish verb 
+sense disambiguation}
+
+\Description{\MarginText{Inteligencia Artificial}{Cristian Cardellino and Laura Alonso Alemany.
+\emph{Inteligencia Artificial}, [S.l.], v. 21, n. 61, p. 67-81, mar. 2018. ISSN 1988-3064.}}
+
+%\newpage
+\vspace{1em}
+
+%------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Trabajos presentados en congresos}
+\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2018}{Increasing Argument Annotation Reproducibility by Using Inter-annotator
+Agreement to Improve Guidelines}
+
+\Description{\MarginText{LREC}{Milagro Teruel, Cristian Cardellino, Fernando 
+Cardellino, Laura Alonso Alemany and Serena Villata. The {\em 11th International 
+Conference on Language Resources and Evaluation} (LREC), 2018, Miyazaki, Japan.}}
+
+%------------------------------------------------
+
+\NewEntry{2017}{Ontology population and alignment for the legal domain:
+YAGO, Wikipedia and LKIF}
+
+\Description{\MarginText{ISWC}{Cristian Cardellino, Milagro Teruel, Laura
+Alonso Alemany and Serena Villata. At 2017 {\em ISWC Posters and Demonstrations and 
+Industry Tracks}, ISWC-P and D-Industry 2017, Vienna, Austria.}}
+
+%------------------------------------------------
+
+\NewEntry{2017}{A low-cost, high-coverage legal named entity recognizer,
+classifier and linker}
+
+\Description{\MarginText{ICAIL}{Milagro Teruel, Cristian Cardellino, Laura
+Alonso Alemany and Serena Villata. In the proceedings of the {\em 16th 
+International Conference on Artificial Intelligence and Law}, ICAIL 2017, 
+12 June 2017, pp. 9-18, London, UK.}}
+
+%------------------------------------------------
+
+\NewEntry{2017}{Legal NERC with ontologies, Wikipedia and curriculum learning}
+
+\Description{\MarginText{EACL}{Cristian Cardellino, Milagro Teruel, Laura
+Alonso Alemany, and Serena Villata. In the {\em 15th Conference of the European
+Chapter of the Association for Computational Linguistics}, EACL 2017,
+Proceedings of Conference, Volume 2, pp. 254-259, 2017, Valencia, Spain.}}
+
+%------------------------------------------------
+
+\NewEntry{2017}{Learning slowly to learn better: Curriculum learning for legal
+ontology population}
+
+\Description{\MarginText{FLAIRS}{Cristian Cardellino, Milagro Teruel, Laura
+Alonso Alemany and Serena Villata. In the {\em FLAIRS 2017 - Proceedings of the 30th
+International Florida Artificial Intelligence Research Society Conference}, pp.
+252-257, 2017, Marco Island Beach, USA.}}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Improvements in information extraction in legal text by active
+learning}
+
+\Description{\MarginText{JURIX}{Cristian Cardellino, Laura Alonso Alemany,
+Serena Villata, and Elena Cabrio. In {\em Frontiers in Artificial Intelligence and
+Applications}, 279, pp. 21-30, 2015. At the {\em 28th Annual International Conference 
+on Legal Knowledge and Information Systems}, JURIX 2015, Braga, Portugal.}}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Information extraction with active learning: a case study in
+legal text}
+
+\Description{\MarginText{LNCS}{Cristian Cardellino, Serena Villata, Laura
+Alonso Alemany, and Elena Cabrio. {\em Lecture Notes in Computer Science
+(including subseries Lecture Notes in Artificial Intelligence and Lecture Notes
+in Bioinformatics)}, 9042, pp. 483-494, 2015. At the {\em 16th Annual Conference 
+on Intelligent Text Processing and Computational Linguistics}, CICLing 2015, 
+Cairo, Egypt.}}
+
+%------------------------------------------------
+
+\NewEntry{2014}{Licentia: a tool for supporting users in data licensing on the
+web of data}
+
+\Description{\MarginText{ISWC}{Cristian Cardellino, Serena Villata, Fabien
+Gandon, Guido Governatori, Ho-Pun Lam, Antonino Rotolo. {\em CEUR Workshop
+Proceedings}, 1272, pp. 277-280, 2014. At the {\em ISWC 2014 Posters and 
+Demonstrations Track}, ISWC-P and D 2014, {\em 13th International Semantic 
+Web Conference}, ISWC 2014, Riva del Garda, Italy.}}
+
+\vspace{1em}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+
+\noindent\spacedlowsmallcaps{Trabajos presentados en simposios}
+\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{Jul 2017}{In-domain or out-domain word embeddings? A study for legal
+cases}
+
+\Description{\MarginText{ESSLLI}{Milagro Teruel and Cristian Cardellino. The
+29th {\em European Summer School in Logic, Language, and
+Information} Student Session, ESSLLI 2017.}}
+
+%------------------------------------------------
+
+\NewEntry{Sep 2017}{Disjoint semi-supervised Spanish verb sense disambiguation
+using word embeddings}
+
+\Description{\MarginText{ASAI}{Cristian Cardellino and Laura Alonso Alemany.
+{\em ASAI. $46^{\circ}$ JAIIO}.}}
+
+%------------------------------------------------
+
+\NewEntry{Ago 2015}{A study of semi-supervised Spanish verb sense
+disambiguation}
+
+\Description{\MarginText{ESSLLI}{Cristian Cardellino. The 27th {\em European
+School of Logic, Language, and Information} Student Session, ESSLLI 2015.}}
+
+%------------------------------------------------
+
+% \NewEntry{Jul 2015}{Combining semi-supervised and active learning to recognize
+% minority senses in a new corpus}
+
+% \Description{\MarginText{IJCAI\\Workshop}{Cristian Cardellino, Milagro Teruel,
+% and Laura Alonso Alemany. {\em Workshop on replicability and reproducibility in
+% Natural Language Processing: adaptive methods, resources and software}. IJCAI
+% 2015.}}
+
+%------------------------------------------------
+
+% \NewEntry{Sep 2013}{SuFLexQA: an approach to Question Answering from the
+% lexicon}
+
+% \Description{\MarginText{ASAI}{Cristian Cardellino and Laura Alonso Alemany.
+% {\em ASAI. $42^{\circ}$ JAIIO}.}}
+
+%------------------------------------------------
+%------------------------------------------------
+
+% \vspace{1em}
+\newpage
+
+% \noindent\spacedlowsmallcaps{Trabajos enviados a\'un no aceptados para
+% publiaci\'on}\vspace{1em}
+
+% %------------------------------------------------
+
+% \NewEntry{2017}{Exploring the impact of word embeddings for disjoint
+% semi-supervised Spanish verb sense disambiguation}
+
+% \Description{\MarginText{Iberamia}{Cristian Cardellino, Laura Alonso i Alemany.
+% {\em Edici\'on especial dedicada a ASAI 2017. Revista Iberoamericana de
+% Inteligencia Artificial.}}}
+
+% %------------------------------------------------
+
+% \vspace{1em}
+
+\noindent\spacedlowsmallcaps{Asistencia a reuniones cient\'ificas y
+tecnol\'ogicas}\vspace{1em}
+%------------------------------------------------
+
+\NewEntry{May. 2018}{LREC 2018}
+
+\Description{\MarginText{LREC}{11th International Conference on Language 
+Resources and Evaluation (LREC). 7 al 12 de Mayo de 2018, Miyazaki, Japón.}}
+
+%------------------------------------------------
+
+% \NewEntry{Nov. 2017}{PyData San Luis (Argentina)}
+
+% \Description{\MarginText{PyData San Luis}{PyData San Luis (Argentina) 2017. 
+% 16 al 18 de Noviembre de 2017, San Luis, Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Sep. 2017}{CLEI-JAIIO 2017}
+
+\Description{\MarginText{CLEI-JAIIO}{$43^{\circ}$ Conferencia Latinoamericana
+de Inform\'atica (CLEI) -- $46^{\circ}$ Jornadas Argentinas de Inform\'atica
+(JAIIO). 4 al 8 de Septiembre de 2016, C\'ordoba, Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Jul. 2017}{ESSLLI 2017}
+
+\Description{\MarginText{ESLLI}{29th European Summer School on Logic, Language
+  and Information. 17 al 28 de Julio de 2017, Toulouse, Francia.}}
+
+%------------------------------------------------
+
+\NewEntry{Ago. 2015}{ESSLLI 2015}
+
+\Description{\MarginText{ESLLI}{27th European Summer School on Logic, Language
+  and Information. 3 al 14 de Agosto de 2015, Barcelona, Espa\~na.}}
+
+%------------------------------------------------
+
+\NewEntry{Jul. 2015}{IJCAI 2015}
+
+\Description{\MarginText{IJCAI}{24th International Joint Conference on
+  Artificial Intelligence. 25 al 31 de Julio de 2015, Buenos Aires, Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Oct. 2014}{ISWC 2014}
+
+\Description{\MarginText{ISWC}{13th International Semantic Web Conference. 19 al
+  23 de Octubre de 2014. Riva del Garda, Italia.}}
+
+%------------------------------------------------
+
+\NewEntry{Sep. 2013}{CLEF 2013}
+
+\Description{\MarginText{CLEF}{Conference and Labs of the Evaluation Forum. 23
+al 26 de Septiembre de 2013, Valencia, Espa\~na.}}
+
+%------------------------------------------------
+
+\vspace{1em}
+%\newpage
+
+\noindent\spacedlowsmallcaps{Seminarios}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{Oct. 2017}{Inteligencia Artificial}
+
+\Description{\MarginText{CUE}{Cristian Cardellino. Jornadas TIC 2017. Colegio
+Universitario Ezpeleta. 6 de Octubre de 2017. Morteros. C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Sep. 2017}{Extracci\'on autom\'atica de argumentos en texto legal}
+
+\Description{\MarginText{FAMAF}{Milagro Teruel y Cristian Cardellino. I
+Jornadas de Trabajo en Estudios sobre Procesamiento del Lenguaje. Facultad de
+Psicolog\'ia, UNC. 29 de Septiembre de 2017. C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{May. 2017}{Representaci\'on de palabras mediante vectores}
+
+\Description{\MarginText{FAMAF}{Cristian Cardellino. Seminario de Matem\'atica
+Aplicada. FAMAFyC, UNC. 11 de Mayo de 2017. C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Dic. 2014}{De Lenguaje Natural a Linked Data}
+
+\Description{\MarginText{FAMAF}{Cristian Cardellino. Quinta Jornada de
+Doctorandos de Computación. FAMAFyC, UNC. 10 de Diciembre de 2014. C\'ordoba.
+Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Nov. 2014}{Licentia: A Tool for Supporting Users in Data Licensing on
+the Web of Data}
+
+\Description{\MarginText{INRIA}{Cristian Cardellino. Wimmics Team, INRIA. 28 de
+Noviembre de 2014. Sophia Antipolis. Francia.}}
+
+%------------------------------------------------
+
+\NewEntry{Dic. 2013}{Incorporando Inteligencia a la Extracci\'on de
+Informaci\'on}
+
+\Description{\MarginText{FAMAF}{Cristian Cardellino. Cuarta Jornada de
+Doctorandos de Computación. FAMAFyC, UNC. 2 de Diciembre de 2013. C\'ordoba.
+Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{Oct. 2013}{Subcategorization Frames over Lexicons for Question
+  Answering}
+
+\Description{\MarginText{Universit\"at\\Z\"urich}{Cristian Cardellino.
+Institut f\"ur Computerlinguistik. 8 de Octubre de 2013. Institut f\"ur
+Computerlinguistik. Argentina. Z\"urich. Suiza}}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+%\newpage
+
+\noindent\spacedlowsmallcaps{Comit\'es}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2018}{Miembro del comit\'e de organización -- PyData C\'ordoba 2018}
+
+\Description{\MarginText{PyData}{Miembro del comit\'e de organización. Ayuda en la organizaci\'on
+de la conferencia y revisi\'on de las publicaciones para PyData C\'ordoba 2018. UNC. 
+C\'ordoba, Argentina. Septiembre 2018.}}
+
+%------------------------------------------------
+
+\NewEntry{2018}{Miembro del comit\'e de programa -- MIREL Workshop 2018}
+
+\Description{\MarginText{AICOL}{Revisi\'on de publicaciones para el {\em I
+Workshop on Mining and Reasoning with Legal Texts (MIREL)}.
+LuxLogAI 2018. Universidad de Luxemburgo, Luxemburgo. Septiembre 2018.}}
+
+%------------------------------------------------
+
+\NewEntry{2016}{Miembro del comit\'e de programa -- AICOL VII}
+
+\Description{\MarginText{AICOL}{Revisi\'on de publicaciones para el {\em VII
+Workshop on Artficial Intelligence and Complexity of Legal Systems (AICOL)}.
+JURIX 2016. INRIA Sophia Antipolis Mediterran\'ee, Francia. Diciembre
+2016.}}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Miembro del comit\'e de programa -- AICOL VI}
+
+\Description{\MarginText{AICOL}{Revisi\'on de publicaciones para el {\em VI
+Workshop on Artficial Intelligence and Complexity of Legal Systems (AICOL)}.
+JURIX 2015. Universidad de Minho, Braga, Portugal. Diciembre 2015.}}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+%\newpage
+
+\noindent\spacedlowsmallcaps{Proyectos}\vspace{1em}
+
+\NewEntry{2016-2019}{Mining and reasoning with legal texts}
+
+\Description{\MarginText{MIREL}{El proyecto es financiado por el programa de
+investigaci\'on e inovaci\'on {\em European Union's Horizon 2020} bajo la
+acuerdo de subvención Marie Sk\l{}odowska-Curie n\'umero 690974}}
+
+\vspace{2em}
+
+%-------------------------------------------------------------------------------
+%	FORMACIÓN
+%-------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{\Large{Formaci\'on}}\vspace{1em}
+
+\noindent\spacedlowsmallcaps{Becas Obtenidas}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2013-2018}{Beca de Posgrado}
+
+\Description{\MarginText{CONICET}{Consejo Nacional de Investigaciones
+  Cient\'ificas y T\'ecnicas. Duración: 5 a\~nos.}}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Beca de asistencia ESSLLI 2015}
+
+\Description{\MarginText{EACL}{European Chapter of the Association for
+  Computational Linguistics Grant para estudiantes que trabajen en el \'area de
+  Lenguaje y Computaci\'on y asistan a ESSLLI 2015.}}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+%\newpage
+
+\noindent\spacedlowsmallcaps{Cursos de Perfeccionamiento Realizados}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2016}{Programaci\'on distribu\'ida sobre grandes vol\'umenes de
+datos}
+
+\Description{\MarginText{UNC}{Prof. Dr. Damián Barsotti.  Facultad de
+Matem\'atica, Astronom\'ia, F\'isica y Computaci\'on.  Universidad Nacional de
+C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2016}{Computaci\'on paralela}
+
+\Description{\MarginText{UNC}{Prof. Dr. Nicol\'as Wolovick. Facultad de
+Matem\'atica, Astronom\'ia, F\'isica y Computaci\'on. Universidad Nacional de
+C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Dise\~no e implementaci\'on de compiladores}
+
+\Description{\MarginText{UNC}{Profs. Marcelo Arroyo y Francisco Bavera.
+Facultad de Matem\'atica, Astronom\'ia, F\'isica y Computaci\'on. Universidad
+Nacional de C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Description logic reasoning}
+
+\Description{\MarginText{RIO}{Prof. PhD. Anni-Yasmin Turhan.
+  Escuela de Verano de Ciencias Inform\'aticas RIO 2015.
+  Universidad Nacional de R\'io Cuarto. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2014}{Machine learning}
+
+\Description{\MarginText{Coursera}{Prof. PhD. Andrew Ng. Stanford University a
+  trav\'es de Coursera.}}
+
+%------------------------------------------------
+
+\NewEntry{2014}{Aceleraci\'on con GPUs: Arquitectura y programaci\'on CUDA}
+
+\Description{\MarginText{RIO}{Prof. Manuel Ujald\'on Mart\'inez.
+  Escuela de Verano de Ciencias Inform\'aticas RIO 2014.
+  Universidad Nacional de R\'io Cuarto. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2013}{Procesamiento de lenguaje natural}
+
+\Description{\MarginText{UNC}{Prof. Dra. Laura Alonso i Alemany.  Facultad de
+Matem\'atica, Astronom\'ia, F\'isica y Computaci\'on. Universidad Nacional de
+C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2013}{Graph-based representation and reasoning in artificial
+intelligence}
+
+\Description{\MarginText{ECI}{Prof. PhD. Madalina Croitoru. Escuela de Ciencias
+Inform\'aticas 2013. Facultad de Ciencias Extactas y Naturales. Universidad de
+Buenos Aires. Argentina.}}
+
+%------------------------------------------------
+
+\NewEntry{2013}{Reductions and causality}
+
+\Description{\MarginText{ECI}{Prof. PhD. Jean-Jacques Levy. Escuela de Ciencias
+Inform\'aticas 2013. Facultad de Ciencias Extactas y Naturales. Universidad de
+Buenos Aires. Argentina.}}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+
+\noindent\spacedlowsmallcaps{Viajes de estudio e investigaci\'on}\vspace{1em}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{2 Jul. -- 1 Ago. 2018} Visita al grupo WIMMICS-INRIA,
+en el marco del proyecto MIREL. Niza. Francia.}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{1 May. -- 7 Jun. 2018} Visita al grupo WIMMICS-INRIA,
+en el marco del proyecto MIREL. Niza. Francia.}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{3 Jul -- 3 Ago. 2017} Visita al grupo WIMMICS-INRIA,
+en el marco del proyecto MIREL. Niza. Francia.}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{3 Sep. -- 3 Oct. 2016} Visita al grupo WIMMICS-INRIA,
+en el marco del proyecto MIREL. Niza. Francia.}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{2 Jun. -- 2 Dic. 2014} Visita al grupo WIMMICS-INRIA
+en pasant\'ia de investigaci\'on y desarrollo. Niza. Francia.}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{10 -- 18 Oct. 2013} Visita a la Universidad de
+  Barcelona. Espa\~na.}
+
+\vspace{-0.5em}
+
+\Description{\MarginText{27 Sep. -- 8 Oct. 2013} Visita a la Universidad de
+  Z\"urich. Suiza.}
+
+\vspace{2em}
+%\newpage
+
+%-------------------------------------------------------------------------------
+%	DISTINCIONES
+%-------------------------------------------------------------------------------
+\spacedlowsmallcaps{\Large{Distinciones o Premios Obtenidos}}\vspace{1em}
+
+\NewEntry{2017}{Most Innovative Application Paper Award}
+
+\Description{\MarginText{ICAIL}{Otorgado por ``International Association for
+Artificial Intelligence and Law'', al paper ``Low-cost, High-coverage Legal
+Named Entity Recognizer, Classifier and Linker'', en el marco del 16th ICAIL.}}
+
+%------------------------------------------------
+
+\NewEntry{2013}{Premio Universidad}
+
+\Description{\MarginText{UNC}{Diploma con Menci\'on Especial. Universidad
+Nacional de C\'ordoba. Argentina.}}
+
+%------------------------------------------------
+
+\vspace{2em} % Extra space between major sections
+
+%-------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%-------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{\Large{Otros Antecedentes}}\vspace{1em}
+
+%------------------------------------------------
+
+\spacedlowsmallcaps{Vinculaci\'on}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2017}{\textsc{SANTEX}  --- FAMAFyC. UNC.}
+
+\Description{\MarginText{SANTEX} Docente a cargo del convenio de vinculaci\'on
+entre SANTEX y FAMAFyC para el desarrollo en aplicaciones industriales para
+Ciencias de Datos.}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+
+\spacedlowsmallcaps{Gesti\'on}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2017}{\textsc{COGRADO}  --- FAMAFyC. UNC.}
+
+\Description{\MarginText{COGRADO} Miembro del Consejo de Grado como
+representante de la secci\'on de Computaci\'on.
+Facultad de Matem\'atica, Astronom\'ia, F\'isica, y Computaci\'on. Universidad
+Nacional de C\'ordoba. Argentina.}
+
+%------------------------------------------------
+
+\NewEntry{2017}{\textsc{CODEPO}  --- FAMAFyC. UNC.}
+
+\Description{\MarginText{CODEPO} Miembro del Consejo de Posgrado como
+representante de estudiantes de doctorado por el \'area de Computaci\'on.
+Facultad de Matem\'atica, Astronom\'ia, F\'isica, y Computaci\'on. Universidad
+Nacional de C\'ordoba. Argentina.}
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\spacedlowsmallcaps{Experiencia Industrial}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2018}{\textsc{Tappedout.net} --- C\'ordoba. Argentina.}
+
+\Description{\MarginText{Tappedout} Desarrollador web full-stack remoto. 
+Ingeniero de aprendizaje autom\'atico.}
+
+%------------------------------------------------
+
+\NewEntry{2014}{\textsc{INRIA}  --- Sophia Antipolis. Francia.}
+
+\Description{\MarginText{INRIA} Pasant\'ia de Investigaci\'on y Desarrollo en
+  Scala y Java.}
+
+%------------------------------------------------
+
+\NewEntry{2012}{\textsc{Machinalis}  --- C\'ordoba. Argentina.}
+
+\Description{\MarginText{Machinalis} Desarrollador Jr. Python/Django.}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\vspace{1em}
+\spacedlowsmallcaps{Idiomas}\vspace{1em}
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{Espa\~nol} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\parbox{\langbox}{\textsc{Espa\~nol}}\ \ $\cdotp$\ \ \ \textsc{Ingl\'es}}
+
+% \vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+% \Description{\parbox{\langbox}{\textsc{Ingl\'es}}\ \ $\cdotp$\ \ \ Flu\'ido}
+
+% \vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+% \Description{\parbox{\langbox}{\textsc{Franc\'es}}\ \ $\cdotp$\ \ \ B\'asico}
+
+%------------------------------------------------
+%------------------------------------------------
+
+% \vspace{1em}
+
+% \spacedlowsmallcaps{Otros}\vspace{1em}
+
+% \Description{\MarginText{Intel} Intel Youth Enterprise Ideation Camp.\\
+%   29 de Mayo de 2015. Intel C\'ordoba. Argentina.}
+
+\end{cv}
+
+\end{document}
+
